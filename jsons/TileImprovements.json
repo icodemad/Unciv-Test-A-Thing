@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Mountain Complex",
+    "terrainsCanBeBuiltOn": ["Hill"],
+    "turnsToBuild": 6,
+    "techRequired": "Engineering",
+    "uniques": [
+        "Can only be built on [Hill] tiles",
+        "Must be next to [{your} {Mountain}]",
+        "Unbuildable <within [4] tiles of a [{your} {Mountain Complex}]>",
+        "Costs [2] [Gold] per turn",
+        "Nullifies all other stats this tile provides",
+        "Tile provides yield without assigned population",
+        "[+3 Production, +1 Science] <when stacked with a [Military] unit>", // <when at war>",
+        "[+1 Production] for each adjacent [{your} {Mountain}]",
+        // "Adjacent enemy units ending their turn take [20] damage",
+        "Will not be replaced by automated units",
+        "Unpillagable",
+        ],
+    "shortcutKey": "N"
+  },
+]
