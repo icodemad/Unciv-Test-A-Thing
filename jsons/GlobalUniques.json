@@ -4,6 +4,7 @@
         
         ],
     "unitUniques": [
+        "[This Unit] heals [2] HP <if it hasn't used other actions yet> <when below [40] HP> <for [Water] units>",
         "Can pass through impassable tiles <for [{Land} {non-[Helicopter]}] units> <in [{your} {Mountain Complex}] tiles>",
         "Can pass through impassable tiles <for [{Land} {non-[Helicopter]}] units> <in tiles adjacent to [{your} {Mountain Complex}] tiles> <in [{your} {Mountain​}] tiles>", //In Fake Mountain
         "Cannot attack <when fighting in [Mountain​] tiles>", //No attacking in Fake Mountain
