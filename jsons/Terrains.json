@@ -10,7 +10,7 @@
           "Doesn't generate naturally",
           "Has an elevation of [2] for visibility calculations",
           // "Units ending their turn on this terrain take [50] damage",
-          "Becomes [Mountain] when adjacent to [All] <in tiles not adjacent to [{your} {Mountain Complex}] tiles>" //Reverts to real Mountain without Mountain Complex
+          "Becomes [Mountain] when adjacent to [All] <in tiles not adjacent to [Mountain Complex] tiles>" //Reverts to real Mountain without Mountain Complex
           ]
 	},
   {
@@ -26,7 +26,7 @@
             "Units ending their turn on this terrain take [50] damage",
             "Always Fertility [-2] for Map Generation",
             "Considered [Undesirable] when determining start locations",
-            "Becomes [Mountain​] when adjacent to [{your} {Mountain Complex}]"
+            "Becomes [Mountain​] when adjacent to [Mountain Complex]"
             ]
 	}
 ]
