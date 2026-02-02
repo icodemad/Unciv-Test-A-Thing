@@ -6,12 +6,12 @@
     "unitUniques": [
         "[This Unit] heals [2] HP <if it hasn't used other actions yet> <when below [40] HP> <for [Water] units>",
         "Can pass through impassable tiles <for [Land] units> <in [{your} {Mountain Complex}] tiles>",
-        "Can pass through impassable tiles <for [Land] units> <in [{your} {MountainB}] tiles> <in tiles adjacent to [{your} {Mountain Complex}] tiles>", //In Fake Mountain "​"
-        "Cannot attack <when fighting in [MountainB] tiles> <vs [non-[Helicopter]] units>", //No attacking in Fake Mountain
-        "Cannot attack <in [MountainB] tiles>", //No attacking from Fake Mountain
+        // "Can pass through impassable tiles <for [Land] units> <in [{your} {MountainB}] tiles> <in tiles adjacent to [{your} {Mountain Complex}] tiles>", //In Fake Mountain "​"
+        "Cannot attack <when fighting in [MountainB] tiles> <vs [non-[Helicopter]] units>", // <within [2] tiles of a [Mountain Complex]>", // No attacking in Mountain Complex Mountains, but catches some regular mountains too because we can't detect target tile adjacencies.
+        "Cannot attack <in [MountainB] tiles>", // <in tiles adjacent to [{your} {Mountain Complex}] tiles>", //No attacking from Mountain Complex Tunnels
         "Invisible <for [{Land} {non-[Helicopter]}] units> <in [{your} {Mountain Complex}] tiles>",
-        "Invisible <for [{Land} {non-[Helicopter]}] units> <in [{your} {MountainB​}] tiles>" //In Fake Mountain
-        ],
+        "Invisible <for [{Land} {non-[Helicopter]}] units> <in [{your} {MountainB}] tiles>"
+    ],
     "civilopediaText": [
         {"text": "Global uniques are ruleset-wide modifiers that apply to all civilizations."}
     ]
