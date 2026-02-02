@@ -10,7 +10,7 @@
 			"[0 Food]",
 			"Pillaging this improvement yields approximately [+18 Gold]"],
 		"shortcutKey": "F"
-	},
+  },
   {
     "name": "Mountain Complex",
     "terrainsCanBeBuiltOn": ["Hill"],
@@ -92,5 +92,5 @@
         "Will not be replaced by automated units"  
         ],
     "shortcutKey": ""
-  },
+  }
 ]
