@@ -29,7 +29,7 @@
 		"Comment [No base yield from terrain/resources]",
 		"[-10 Food, -10 Production, -10 Gold, -10 Culture, -10 Faith] <hidden from users>",
         "[+3 Production, +1 Science] <when stacked with a [Military] unit>", // <when at war>",
-        "[+1 Production] for each adjacent [{MountainB}]",
+        "[+1 Production] for each adjacent [MountainB]",
         // "Adjacent enemy units ending their turn take [20] damage",
         "Will not be replaced by automated units",
         "Unpillagable",
