@@ -9,6 +9,7 @@
         "Can be built just outside your borders",
         "Gain control over [Mountain] tiles in a [1]-tile radius",
         "Unbuildable <within [4] tiles of a [Mountain Complex]>",
+        "Unbuildable <within [4] tiles of a [Military Project Base]>",
         "Costs [2] [Gold] per turn",
         //"Nullifies all other stats this tile provides",
         "Tile provides yield without assigned population",
@@ -19,5 +20,65 @@
         "Unpillagable",
         ],
     "shortcutKey": "N"
+  },
+  {
+    "name": "Military Project Base",
+    "terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Hill","Tundra","Snow","Forest","Jungle"],
+    "turnsToBuild": 6,
+    "techRequired": "Engineering",
+    "uniques": [
+        "Unbuildable <within [4] tiles of a [Mountain Complex]>",
+        "Unbuildable <within [4] tiles of a [Military Project Base]>",
+        "Costs [2] [Gold] per turn",
+        //"Nullifies all other stats this tile provides",
+        //"Tile provides yield without assigned population",
+        "[+3 Production, +1 Science] <when stacked with a [Military] unit>", // <when at war>",
+        "[+1 Science, +1 Breakthrough] for each adjacent [Project Research Facility]",
+        "[+1 Production, +1 Breakthrough] for each adjacent [Project Assembly Facility]",
+        "[+1 Science, -1 Production, +1 Breakthrough] for each adjacent [Project Test Facility]",
+        // "Adjacent enemy units ending their turn take [20] damage",
+        "Will not be replaced by automated units",
+        "Unpillagable",
+        ],
+    "shortcutKey": "N"
+  },
+  {
+    "name": "Project Research Facility",
+    "terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Hill","Tundra","Snow","Forest","Jungle"],
+    "turnsToBuild": 6,
+    "techRequired": "Engineering",
+    "uniques": [
+        "Must be next to [Military Project Base]",
+        "Costs [2] [Gold] per turn",
+        "[-10 Food, -10 Production, -10 Gold, -10 Culture, -10 Faith]",
+        "Will not be replaced by automated units"
+        ],
+    "shortcutKey": ""
+  },
+  {
+    "name": "Project Assembly Facility",
+    "terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Hill","Tundra","Snow","Forest","Jungle"],
+    "turnsToBuild": 6,
+    "techRequired": "Engineering",
+    "uniques": [
+        "Must be next to [Military Project Base]",
+        "Costs [1] [Gold] per turn",
+        "[-10 Food, -10 Production, -10 Gold, -10 Culture, -10 Faith]",
+        "Will not be replaced by automated units"
+        ],
+    "shortcutKey": ""
+  },
+  {
+    "name": "Project Test Facility",
+    "terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Hill","Tundra","Snow","Forest","Jungle"],
+    "turnsToBuild": 6,
+    "techRequired": "Engineering",
+    "uniques": [
+        "Must be next to [Military Project Base]",
+        "Costs [1] [Production] per turn",
+        "[-10 Food, -10 Production, -10 Gold, -10 Culture, -10 Faith]",
+        "Will not be replaced by automated units"  
+        ],
+    "shortcutKey": ""
   },
 ]
