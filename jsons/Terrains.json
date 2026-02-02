@@ -10,7 +10,7 @@
 			//"Doesn't generate naturally",
 			"Has an elevation of [2] for visibility calculations",
 			// "Units ending their turn on this terrain take [50] damage",
-			"Becomes [Mountain] when adjacent to [All] <in tiles not adjacent to [Mountain Complex] tiles>"  // Reverts to real Mountain without Mountain Complex
+			"Becomes [Mountain] when adjacent to [All] <in tiles not adjacent to [Mountain Complex] tiles>"  // Reverts to real Mountain without Mountain Complex ""
 			]
   },
   {
