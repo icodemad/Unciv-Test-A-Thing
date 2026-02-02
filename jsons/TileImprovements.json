@@ -1,5 +1,17 @@
 [
   {
+		"name": "Farm",
+		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Flood plains"],
+		"food": 1,
+		"turnsToBuild": 7,
+		"techRequired": "Agriculture",
+		"uniques": [
+			"Can also be built on tiles adjacent to fresh water",
+			"[0 Food]",
+			"Pillaging this improvement yields approximately [+18 Gold]"],
+		"shortcutKey": "F"
+	},
+  {
     "name": "Mountain Complex",
     "terrainsCanBeBuiltOn": ["Hill"],
     "turnsToBuild": 6,
@@ -14,7 +26,7 @@
         //"Nullifies all other stats this tile provides",
         "Tile provides yield without assigned population",
         "[+3 Production, +1 Science] <when stacked with a [Military] unit>", // <when at war>",
-        "[+1 Production] for each adjacent [{Mountain​}]",
+        "[+1 Production] for each adjacent [{MountainB}]",
         // "Adjacent enemy units ending their turn take [20] damage",
         "Will not be replaced by automated units",
         "Unpillagable",
