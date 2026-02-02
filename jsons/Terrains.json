@@ -1,6 +1,6 @@
 [
   {
-		"name": "Mountain​", //Fake Mountain for the Mountain Complex.  There's a Zero-Width Space (U+200B) at the end.
+		"name": "MountainB", //Fake Mountain for the Mountain Complex.  There's no longer a Zero-Width Space (U+200B) at the end: "​".
 		"type": "Land",
 		"impassable": true,
 		"defenceBonus": 1.00,
@@ -26,7 +26,7 @@
             "Units ending their turn on this terrain take [50] damage <in tiles not adjacent to [{your} {Mountain Complex}] tiles>",
             "Always Fertility [-2] for Map Generation",
             "Considered [Undesirable] when determining start locations",
-            "Becomes [Mountain​] when adjacent to [Mountain Complex]"
+            "Becomes [MountainB] when adjacent to [Mountain Complex]" //removed "​"
             ]
 	}
 ]
