@@ -65,7 +65,7 @@
         "[-10 Food, -10 Production, -10 Gold, -10 Culture, -10 Faith]",
         "Will not be replaced by automated units"
         ],
-    "shortcutKey": ""
+    // "shortcutKey": ""
   },
   {
     "name": "Project Assembly Facility",
@@ -78,7 +78,7 @@
         "[-10 Food, -10 Production, -10 Gold, -10 Culture, -10 Faith]",
         "Will not be replaced by automated units"
         ],
-    "shortcutKey": ""
+    // "shortcutKey": ""
   },
   {
     "name": "Project Test Facility",
@@ -91,6 +91,6 @@
         "[-10 Food, -10 Production, -10 Gold, -10 Culture, -10 Faith]",
         "Will not be replaced by automated units"  
         ],
-    "shortcutKey": ""
+    // "shortcutKey": ""
   }
 ]
