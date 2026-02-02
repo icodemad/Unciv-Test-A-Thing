@@ -18,11 +18,11 @@
     "turnsToBuild": 6,
     "techRequired": "Engineering",
     "uniques": [
-        //"Can only be built on [Hill] tiles",
-        "Can be built just outside your borders",
-        "Gain control over [Mountain] tiles in a [1]-tile radius",
+        "Must be next to [Mountain]",
         "Unbuildable <within [4] tiles of a [Mountain Complex]>",
         "Unbuildable <within [4] tiles of a [Military Project Base]>",
+        "Can be built just outside your borders",
+        "Gain control over [Mountain] tiles in a [1]-tile radius",
         "Costs [2] [Gold] per turn",
         //"Nullifies all other stats this tile provides",
         "Tile provides yield without assigned population",
@@ -42,6 +42,7 @@
     "turnsToBuild": 6,
     "techRequired": "Engineering",
     "uniques": [
+		"Comment [Allows building various Military Project Facility improvements in adjacent tiles]",
         "Unbuildable <within [4] tiles of a [Mountain Complex]>",
         "Unbuildable <within [4] tiles of a [Military Project Base]>",
         "Costs [2] [Gold] per turn",
