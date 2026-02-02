@@ -1,0 +1,18 @@
+{
+    "name": "Global Uniques",
+    "uniques": [
+        
+        ],
+    "unitUniques": [
+        "[This Unit] heals [2] HP <if it hasn't used other actions yet> <when below [40] HP> <for [Water] units>",
+        "Can pass through impassable tiles <for [{Land} {non-[Helicopter]}] units> <in [{your} {Mountain Complex}] tiles>",
+        "Can pass through impassable tiles <for [{Land} {non-[Helicopter]}] units> <in [{your} {Mountain​}] tiles> <in tiles adjacent to [{your} {Mountain Complex}] tiles>", //In Fake Mountain
+        "Cannot attack <when fighting in [Mountain​] tiles>", //No attacking in Fake Mountain
+        "Cannot attack <in [Mountain​] tiles>", //No attacking from Fake Mountain
+        "Invisible <for [{Land} {non-[Helicopter]}] units> <in [{your} {Mountain Complex}] tiles>",
+        "Invisible <for [{Land} {non-[Helicopter]}] units> <in [{your} {Mountain​}] tiles>" //In Fake Mountain
+        ],
+    "civilopediaText": [
+        {"text": "Global uniques are ruleset-wide modifiers that apply to all civilizations."}
+    ]
+}
