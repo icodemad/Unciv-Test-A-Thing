@@ -37,6 +37,31 @@
     "shortcutKey": "N"
   },
   {
+
+	  // Defense Command Center - "[+2 Happiness] <when at war>",
+	  // Communications Control Center - "[+1]% Strength <for [All] units> <for every [{Hostile} {Atomic Bomb}]> <for every [{Hostile} {Nuclear Missile}]>",
+	  // Aerospace Surveillance Command / Missile Warning Center - 
+	  										//[+]% Damage when intercepting <for 
+	  										//Population loss from nuclear attacks [-2]% [in all cities] <for every [[{Open Borders} {Ballistic Missile Early Warning System}] Tiles]>
+											//Damage to garrison from nuclear attacks [-2]% [in all cities] <for every [[{Open Borders} {Ballistic Missile Early Warning System}] Tiles]>
+ 											//<for every [{Open Borders} {Nuclear Missile}]>
+	// Facility Support Systems - "Tile provides yield without assigned population"
+	// Nuclear Enrichment Facility 
+	// 
+	"name": "Defense Command Center",
+    "terrainsCanBeBuiltOn": ["Tunnels"],
+    "turnsToBuild": 6,
+    "techRequired": "Engineering",
+    "uniques": [
+        "Can only be built on [{Friendly} {Mountain} {Tunnel}] tiles",
+        "Costs [2] [Gold] per turn",
+        //"Tile provides yield without assigned population",
+        "Will not be replaced by automated units",
+        "Unpillagable",
+        ],
+    //"shortcutKey": "N"
+  },
+  {
     "name": "Military Project Base",  // Breakthrough tech system - Reference this mod:  https://github.com/chenxing61/Emperors-and-Deities
     "terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Hill","Tundra","Snow","Forest","Jungle"],
     "turnsToBuild": 6,
