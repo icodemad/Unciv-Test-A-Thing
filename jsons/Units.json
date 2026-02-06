@@ -7,8 +7,11 @@
 		"cost": 40,
 		"requiredTech": "Agriculture",
 		"obsoleteTech": "Metal Casting",
-		"upgradesTo": ["Worker","Scout"],
-		"uniques": ["May upgrade to [Spearman] through ruins-like effects"],
+		// "upgradesTo": ["Worker","Scout"],
+		"uniques": ["May upgrade to [Spearman] through ruins-like effects",
+			"Can transform to [Swordsman] <for [Human player] Civilizations>",
+		    "Can transform to [Spearman] <for [Human player] Civilizations>"
+		    ]
 		"attackSound": "nonmetalhit",
         "civilopediaText": [
 			{"text": "This is your basic, club-swinging fighter."}
