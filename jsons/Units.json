@@ -6,7 +6,7 @@
 		"requiredTech": "Agriculture",
 		"uniques": ["Can build [Land] improvements on tiles", "Automation is a primary action",
         "Turn this tile into a [Forest] tile <upon entering a [Featureless] tile>",
-        "Turn this tile into a [Featureless] tile <upon entering a [Vegetation] tile>"
+        "Turn this tile into a [Plains] tile <upon entering a [{Plains} {Vegetation}] tile>"
         ]
 		"cost": 70
   }
