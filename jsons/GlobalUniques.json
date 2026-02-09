@@ -1,8 +1,8 @@
 {
     "name": "Global Uniques",
     "uniques": [
-        "Land units may cross [Mountain] tiles after the first [Land] is earned <in [{your} {Mountain Complex}] tiles>",
-        "Land units may cross [Tunnels] tiles after the first [Land] is earned <in [{your} {Tunnels}] tiles>"
+        "Land units may cross [{your} {Mountain}] tiles after the first [Land] is earned <in [{your} {Mountain Complex}] tiles>",
+        "Land units may cross [{your} {Tunnels}] tiles after the first [Land] is earned <in [{your} {Tunnels}] tiles>"
         ],
     "unitUniques": [
         "[This Unit] heals [2] HP <if it hasn't used other actions yet> <when below [40] HP> <for [Water] units>",
