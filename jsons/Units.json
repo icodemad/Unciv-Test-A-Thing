@@ -5,7 +5,7 @@
 		"movement": 2,
 		"requiredTech": "Agriculture",
 		"uniques": ["Can build [Land] improvements on tiles", "Automation is a primary action",
-        "Turn this tile into a [Forest] tile <upon entering a [non-Vegetation] tile>",
+        "Turn this tile into a [Forest] tile <upon entering a [non-[Vegetation]] tile>",
         "Turn this tile into a [Plains] tile <upon entering a [Vegetation] tile> <in [Plains] tiles>",
         "Turn this tile into a [Grassland] tile <upon entering a [Vegetation] tile> <in [Grassland] tiles>",
         "Turn this tile into a [Tundra] tile <upon entering a [Vegetation] tile> <in [Tundra] tiles>"
