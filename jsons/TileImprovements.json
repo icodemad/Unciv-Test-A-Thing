@@ -4,7 +4,7 @@
 		"turnsToBuild": 1,
 		"techRequired": "Agriculture",
 		"uniques": [
-        "Turn this tile into a [Booby Trap] tile"
+        "Turn this tile into a [Snow] tile"
         ],
 		"shortcutKey": "B"
 	},
