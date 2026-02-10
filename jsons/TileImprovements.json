@@ -1,3 +1,4 @@
+[
 	{
 		"name": "Booby Trap",
 		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Hill","Tundra","Snow","Forest","Jungle"],
@@ -8,3 +9,4 @@
         ],
 		"shortcutKey": "B"
 	}
+]
