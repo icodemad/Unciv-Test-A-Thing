@@ -1,4 +1,4 @@
-{
+	{
 		"name": "Booby Trap",
 		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Hill","Tundra","Snow","Forest","Jungle"],
 		"turnsToBuild": 1,
@@ -7,4 +7,4 @@
         "Turn this tile into a [Snow] tile"
         ],
 		"shortcutKey": "B"
-	},
+	}
