@@ -8,11 +8,11 @@
 		"uniques": [
 			"Doesn't generate naturally"
         ],
-		"shortcutKey": "B"
+		// "shortcutKey": "B"
 	},
 	{
 		"name": "Minefield",
-		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Hill","Tundra","Snow"],
+		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Tundra","Snow","Hill","Forest","Jungle"],
 		"turnsToBuild": 1,
 		"techRequired": "Agriculture",
 		"movementCost": 1,
@@ -22,6 +22,6 @@
         	"[-10 Food, -10 Production, -10 Gold, -10 Culture, -10 Science, -10 Faith]",
 			
         ],
-		"shortcutKey": "B"
+		// "shortcutKey": "B"
 	}
 ]
