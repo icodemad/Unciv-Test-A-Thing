@@ -17,8 +17,8 @@
 		"movementCost": 1,
 		"uniques": [
 			"Can be built outside your borders",
-			"Destroyed when pillaged",
-			//"Cannot be built on [Booby Trap] tiles"
+			//"Turn this tile into a [Booby Trap] tile",
+			"Cannot be built on [Booby Trap] tiles"
         ],
 		// "shortcutKey": "B"
 		"civilopediaText": [{"text":"It's a trap!", "link":"Improvement/Booby Trap"}]
