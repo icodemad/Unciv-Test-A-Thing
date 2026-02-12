@@ -37,5 +37,16 @@
 			
         ],
 		// "shortcutKey": "B"
+	},
+
+	{
+		"name": "Remove Minefield",
+		"turnsToBuild": 1,
+		"techRequired": "Agriculture",		
+		"uniques": [
+			"Can be built outside your borders",
+			"Excluded from map editor"
+			]
+		// "shortcutKey": "B"
 	}
 ]
