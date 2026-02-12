@@ -4,8 +4,23 @@
 		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Hill","Tundra","Snow","Forest","Jungle"],
 		"turnsToBuild": 1,
 		"techRequired": "Agriculture",
+		"movementCost": 1,
 		"uniques": [
-        "Turn this tile into a [Snow] tile"
+			"Doesn't generate naturally"
+        ],
+		"shortcutKey": "B"
+	},
+	{
+		"name": "Minefield",
+		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Hill","Tundra","Snow"],
+		"turnsToBuild": 1,
+		"techRequired": "Agriculture",
+		"movementCost": 1,
+		
+		"uniques": [
+			"Can be built outside your borders",
+        	"[-10 Food, -10 Production, -10 Gold, -10 Culture, -10 Science, -10 Faith]",
+			
         ],
 		"shortcutKey": "B"
 	}
