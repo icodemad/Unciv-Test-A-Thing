@@ -62,6 +62,15 @@
     //"shortcutKey": "N"
   },
   {
+	  "name": "Ballistic Missile EWS",
+	  "terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Hill","Tundra","Snow"],
+	  "turnsToBuild": 8,
+	  "techRequired": "Rocketry",
+	  "uniques": [
+		  "Unbuildable <within [10] tiles of a [{Friendly} {Ballistic Missile EWS}]>",
+	  ]
+  },
+  {
     "name": "Military Project Base",  // Breakthrough tech system - Reference this mod:  https://github.com/chenxing61/Emperors-and-Deities
     "terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Hill","Tundra","Snow","Forest","Jungle"],
     "turnsToBuild": 6,
