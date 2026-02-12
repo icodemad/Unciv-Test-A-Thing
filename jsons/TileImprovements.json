@@ -1,4 +1,20 @@
 [
+	
+	{
+		"name": "Booby Trap",
+	    "terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Hill","Tundra","Snow","Forest","Jungle"],
+    	"turnsToBuild": 1,
+		"techRequired": "Agriculture",
+		"movementCost": 1,
+		"uniques": [
+			"Can be built outside your borders",
+			"Destroyed when pillaged",
+			//"Cannot be built on [Booby Trap] tiles"
+        ],
+		// "shortcutKey": "B"
+		"civilopediaText": [{"text":"It's a trap!", "link":"Improvement/Booby Trap"}]
+	},
+	
 	{
 		"name": "Minefield",
 		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Tundra","Snow","Hill","Forest","Jungle"],
