@@ -5,8 +5,9 @@
 		"movement": 2,
 		"requiredTech": "Agriculture",
 		"uniques": ["Can build [Land] improvements on tiles", "Automation is a primary action",
-        "Turn this tile into a [Desert] tile <upon entering a [Vegetation] tile>",
-		"Turn this tile into a [Forest] tile <upon entering a [Featureless] tile>"
+        "Turn this tile into a [Forest] tile <upon entering a [non-[Vegetation]] tile> <with [50]% chance>",
+		"Turn this tile into a [Jungle] tile <upon entering a [non-[Vegetation]] tile>"
+		// How to turn a vegetation tile into a non vegetation tile?
         ]
 		"cost": 70
   }
