@@ -1,5 +1,14 @@
 [
-	
+	{
+		"name": "Trading post",
+		"terrainsCanBeBuiltOn": ["Land","Forest","Jungle","Marsh","Oasis"],
+		"gold": 1,
+		"turnsToBuild": 7,
+		"techRequired": "Guilds",
+		"uniques": ["[+1 Gold] <after discovering [Economics]>", "Pillaging this improvement yields approximately [+20 Gold]"],
+		"shortcutKey": "T"
+	},
+
 	{
 		"name": "Booby Trap",
 	    "terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Hill","Tundra","Snow","Forest","Jungle"],
