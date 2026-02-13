@@ -1,13 +1,4 @@
 [
-	{
-		"name": "Trading post",
-		"terrainsCanBeBuiltOn": ["Land","Forest","Jungle","Marsh","Oasis"],
-		"gold": 1,
-		"turnsToBuild": 7,
-		"techRequired": "Guilds",
-		"uniques": ["[+1 Gold] <after discovering [Economics]>", "Pillaging this improvement yields approximately [+20 Gold]"],
-		"shortcutKey": "T"
-	},
 
 	{
 		"name": "Booby Trap",
@@ -17,7 +8,7 @@
 		"movementCost": 1,
 		"uniques": [
 			"Can be built outside your borders",
-			//"Turn this tile into a [Booby Trap] tile",
+			"Turn this tile into a [Booby Trap] tile",
 			"Cannot be built on [Booby Trap] tiles"
         ],
 		// "shortcutKey": "B"
@@ -36,6 +27,17 @@
         	"[-10 Food, -10 Production, -10 Gold, -10 Culture, -10 Science, -10 Faith]",
 			
         ],
+		// "shortcutKey": "B"
+	},
+
+	{
+		"name": "Remove Booby Trap",
+		"turnsToBuild": 1,
+		"techRequired": "Agriculture",		
+		"uniques": [
+			"Can be built outside your borders",
+			"Excluded from map editor"
+			]
 		// "shortcutKey": "B"
 	},
 
