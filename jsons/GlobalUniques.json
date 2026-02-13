@@ -17,7 +17,11 @@
 		"[This Unit] gains the [Trap-Panicked] status for [2] turn(s) <upon gaining the [Trap-Suppressed] status>",
 
         "[This Unit] gains the [Trap-Aware] promotion <for units without [{Trap-Aware} {Trap-Veteran} {Trap-Immune}]> <upon losing the [Trap-Panicked] status>",
-		"[This Unit] gains the [Trap-Veteran] promotion <for units with [Trap-Aware]> <upon losing the [Trap-Panicked] status> <removing the [Trap-Aware] promotion/status>"
+		"[This Unit] gains the [Trap-Veteran] promotion <for units with [Trap-Aware]> <upon losing the [Trap-Panicked] status> <removing the [Trap-Aware] promotion/status>",
+
+		"[This Unit] gains the [Trap-Panicked] status for [1] turn(s) <upon entering [Minefield] tiles>",
+		"[This Unit] takes [10] Damage <upon entering [Minefield] tiles>",
+		"Play [elephant.mp3] sound <upon entering [Minefield] tiles>"
         ],
     "civilopediaText": [
         {"text": "Global uniques are ruleset-wide modifiers that apply to all civilizations."}
