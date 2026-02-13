@@ -1,16 +1,36 @@
 [
   {
-			"name": "Trap Panicked",
+			"name": "Trap-Panicked",
 			"uniques": [
 				"[-1] Movement",
-				"[-1] Sight"
+				"[-1] Sight",
+				"Play [bombard.mp3] sound"
 				]
 	},
 	{
 			"name": "Trap-Suppressed",
 			"uniques": [
 				"[-10] Movement",
-				"[-10] Sight"
+				"[-10] Sight",
+				"Play [machinegun.mp3] sound"
+				]
+	},
+	{
+			"name": "Trap-Aware",
+			"uniques": [
+				"Play [WLTK.ogg] sound"
+				]
+	},
+	{
+			"name": "Trap-Veteran",
+			"uniques": [
+				"Play [WLTK.ogg] sound"
+				]
+	},
+	{
+			"name": "Trap-Immune",
+			"uniques": [
+				"Play [WLTK.ogg] sound"
 				]
 	}
 ]
