@@ -1,0 +1,63 @@
+{
+    "name": "Global Uniques",
+    "uniques": [
+        "[This Unit] loses [1] movement <upon entering [Booby Trap] tiles> <for [{Land} {non-[Armored]} {non-[Helicopter]} units>",
+        "[This Unit] gains the [Trap-Panicked] status for [1] turn(s) <upon entering [Booby Trap] tiles> <for all movement> <with [80]% chance> <for [{Land} {non-[Armored]} {non-[Helicopter]} units> <for units without [{Trap-Aware} {Trap-Veteran} {Trap-Immune}]>",
+  			"[This Unit] gains the [Trap-Panicked] status for [1] turn(s) <upon entering [Booby Trap] tiles> <for all movement> <with [60]% chance> <for [{Land} {non-[Armored]} {non-[Helicopter]} units> <for units with [{Trap-Veteran} {Trap-Immune}]>",
+  			"[This Unit] gains the [Trap-Panicked] status for [1] turn(s) <upon entering [Booby Trap] tiles> <for all movement> <with [40]% chance> <for [{Land} {non-[Armored]} {non-[Helicopter]} units> <for units without [Trap-Immune]>",
+
+
+        "[This Unit] takes [5] Damage <for units with [Trap-Panicked]> <for units without [{Trap-Aware} {Trap-Veteran} {Trap-Immune}]>",
+  			"[This Unit] takes [5] Damage <for units with [Trap-Panicked]> <with [75]% chance> <for units without [{Trap-Veteran} {Trap-Immune}]>",
+  			"[This Unit] takes [5] Damage <for units with [Trap-Panicked]> <with [50]% chance> <for units without [Trap-Immune]>",
+
+        "[This Unit] gains the [Trap-Suppressed] status for [1] turn(s) <when defending> <in [Booby Trap] tiles]> <for units without [Trap-Suppressed]> <for [{Land} {non-[Armored]} {non-[Helicopter]} units> <for all movement>",
+        "[This Unit] takes [5] Damage <upon gaining the [Trap-Suppressed] status>",
+        "[This Unit] takes [5] Damage <upon gaining the [Trap-Suppressed] status> <with [50]% chance>",
+  			"[This Unit] gains the [Trap-Panicked] status for [2] turn(s) <upon gaining the [Trap-Suppressed] status>",
+
+        "[This Unit] gains the [Trap-Aware] promotion <for units without [{Trap-Aware} {Trap-Veteran} {Trap-Immune}]> <upon losing the [Trap-Panicked] status>",
+  			"[This Unit] gains the [Trap-Veteran] promotion <for units with [Trap-Aware]> <upon losing the [Trap-Panicked] status> <removing the [Trap-Aware] promotion/status>"
+        ],
+    "civilopediaText": [
+        {"text": "Global uniques are ruleset-wide modifiers that apply to all civilizations."}
+        ]
+}
+
+
+
+/* 
+
+			"[This Unit] gains the [Trap-Panicked] status for [1] turn(s) <upon entering [Booby Trap] tiles> <for all movement> <with [90]% chance> <for [{Land} {non-[Armored]} {non-[Helicopter]} units> <for units without [{Trap-Aware} {Trap-Veteran} {Trap-Immune}]>",
+			"[This Unit] gains the [Trap-Panicked] status for [1] turn(s) <upon entering [Booby Trap] tiles> <for all movement> <with [60]% chance> <for [{Land} {non-[Armored]} {non-[Helicopter]} units> <for units with [{Trap-Veteran} {Trap-Immune}]>",
+			"[This Unit] gains the [Trap-Panicked] status for [1] turn(s) <upon entering [Booby Trap] tiles> <for all movement> <with [30]% chance> <for [{Land} {non-[Armored]} {non-[Helicopter]} units> <for units without [Trap-Immune]>",
+
+			"[This Unit] takes [5] Damage <for units with [Trap-Panicked]> <for units without [{Trap-Aware} {Trap-Veteran} {Trap-Immune}]>",
+			"[This Unit] takes [5] Damage <for units with [Trap-Panicked]> <for units without [{Trap-Veteran} {Trap-Immune}]>",
+			"[This Unit] takes [5] Damage <for units with [Trap-Panicked]> <for units without [Trap-Immune]>",
+
+			"[This Unit] takes [10] Damage <when defending> <in [Booby Trap] tiles]> <for units without [Trap-Suppressed]",
+			"[This Unit] gains the [Trap-Panicked] status for [2] turn(s) <when defending> <in [Booby Trap] tiles]> <for units without [Trap-Suppressed]",
+			"[This Unit] gains the [Trap-Suppressed] status for [1] turn(s) <when defending> <in [Booby Trap] tiles]> <for units without [Trap-Suppressed]",
+			
+
+			"[This Unit] gains the [Trap-Aware] promotion <for units without [{Trap-Aware} {Trap-Veteran} {Trap-Immune}]> <upon losing the [Trap-Panicked] status>",
+			"[This Unit] gains the [Trap-Veteran] promotion <for units with [Trap-Aware]> <upon losing the [Trap-Panicked] status> <removing the [Trap-Aware] promotion/status>",
+			
+		{
+			"name": "Trap Panicked",
+			"uniques": [
+				"[-1] Movement",
+				"[-1] Sight"
+				]
+    },
+  	{
+			"name": "Trap-Suppressed",
+			"uniques": [
+				"[-10] Movement",
+				"[-10] Sight"
+				]
+	  }
+
+*/
+
