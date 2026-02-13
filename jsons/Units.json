@@ -11,6 +11,7 @@
         ]
 		"cost": 70
 	},
+	/*
 	{
 		"name": "Marine",
 		"unitType": "Gunpowder",
@@ -44,8 +45,6 @@
 			],
 		"attackSound": "shot"
 	},
-
-
-
+	*/
 	
 ]
