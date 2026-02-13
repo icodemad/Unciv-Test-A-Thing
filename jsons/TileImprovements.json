@@ -1,7 +1,7 @@
 [
 
 	{
-		"name": "Booby Trap",
+		"name": "Set Booby Trap",
 	    "terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Hill","Tundra","Snow","Forest","Jungle"],
     	"turnsToBuild": 1,
 		"techRequired": "Agriculture",
