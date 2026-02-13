@@ -1,0 +1,16 @@
+[
+  {
+			"name": "Trap Panicked",
+			"uniques": [
+				"[-1] Movement",
+				"[-1] Sight"
+				]
+	},
+	{
+			"name": "Trap-Suppressed",
+			"uniques": [
+				"[-10] Movement",
+				"[-10] Sight"
+				]
+	}
+]
