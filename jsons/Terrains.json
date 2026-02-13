@@ -1,19 +1,19 @@
 [
-  {
-		"name": "Booby Trap",
-    "type": "TerrainFeature",
-		"occursOn": ["Plains","Grassland","Desert","Tundra","Snow","Hill","Forest","Jungle"],
-		"overrideStats": true,
-    "movementCost": 1,
-    "defenceBonus": -0.15
-    "uniques": ["Doesn't generate naturally"],
-  	"civilopediaText": [{"text":"It's a trap!", "link":"Improvement/Booby Trap"}]
+	{
+	"name": "Booby Trap",
+	"type": "TerrainFeature",
+	"occursOn": ["Plains","Grassland","Desert","Tundra","Snow","Hill","Forest","Jungle"],
+	"overrideStats": true,
+	"movementCost": 1,
+	"defenceBonus": -0.15
+	"uniques": ["Doesn't generate naturally"],
+	"civilopediaText": [{"text":"It's a trap!", "link":"Improvement/Booby Trap"}]
 	},
-  {
-		"name": "Booby Trap (sprung)",
+	{
+	"name": "Booby Trap (sprung)",
     "type": "TerrainFeature",
-		"occursOn": ["Plains","Grassland","Desert","Tundra","Snow","Hill","Forest","Jungle"],
-		"overrideStats": true,
+	"occursOn": ["Plains","Grassland","Desert","Tundra","Snow","Hill","Forest","Jungle"],
+	"overrideStats": true,
     "movementCost": 1,
     "uniques": ["Doesn't generate naturally"],
   	"civilopediaText": [{"text":"Someone left a foot behind", "link":"Improvement/Booby Trap"}]
