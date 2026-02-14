@@ -3,6 +3,7 @@
     "unitUniques": [
         "[This Unit] loses [1] movement <upon entering a [Booby Trap] tile> <for [{Land} {non-[Armored]} {non-[Helicopter]} units>",
 		"[This Unit] takes [15] Damage <upon entering a [Booby Trap] tile>",
+		"[This Unit] takes [15] Damage <upon entering a [Farm] tile>",
         "[This Unit] gains the [Trap-Panicked] status for [1] turn(s) <upon entering a [Booby Trap] tile>", // <for all movement> <with [80]% chance> <for [{Land} {non-[Armored]} {non-[Helicopter]} units> <for units without [{Trap-Aware} {Trap-Veteran} {Trap-Immune}]>",
 		"[This Unit] gains the [Trap-Panicked] status for [1] turn(s) <upon entering a [Booby Trap] tile> <for all movement> <with [60]% chance> <for [{Land} {non-[Armored]} {non-[Helicopter]} units> <for units with [{Trap-Veteran} {Trap-Immune}]>",
 		"[This Unit] gains the [Trap-Panicked] status for [1] turn(s) <upon entering a [Booby Trap] tile> <for all movement> <with [40]% chance> <for [{Land} {non-[Armored]} {non-[Helicopter]} units> <for units without [Trap-Immune]>",
