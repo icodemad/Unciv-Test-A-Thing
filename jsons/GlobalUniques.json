@@ -19,8 +19,8 @@
 		"[This Unit] gains the [Trap-Panicked] status for [2] turn(s) <upon gaining the [Trap-Suppressed] status>",
 
 		// exploit alert: if units get Panicked after entering trap tiles, and gain resistance upgrades after losing it, they can build their own traps to gain immunity. Maybe require trap suppressed to gain promotions.
-        "[This Unit] gains the [Trap-Aware] promotion <for units without [{Trap-Aware} {Trap-Veteran} {Trap-Immune}]> <upon losing the [Trap-Panicked] status>",
-		"[This Unit] gains the [Trap-Veteran] promotion <for units with [Trap-Aware]> <upon losing the [Trap-Panicked] status> <removing the [Trap-Aware] promotion/status>",
+        "[This Unit] gains the [Trap-Aware] promotion <for units without [{Trap-Aware} {Trap-Veteran} {Trap-Immune}]> <upon losing the [Trap-Panicked] status> <with [33]% chance>",
+		"[This Unit] gains the [Trap-Veteran] promotion <for units with [Trap-Aware]> <upon losing the [Trap-Panicked] status> <with [33]% chance> <removing the [Trap-Aware] promotion/status> ",
 
 		"[This Unit] gains the [Trap-Panicked] status for [1] turn(s) <upon entering a [Minefield] tile>",
 		"[This Unit] takes [10] damage <upon entering a [Minefield] tile>",
