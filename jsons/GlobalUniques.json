@@ -1,10 +1,10 @@
 {
     "name": "Global Uniques",
     "unitUniques": [
-        "[This Unit] loses [1] movement <upon entering a [Booby Trap] tile> <for [{Land} {non-[Armored]} {non-[Helicopter]} units>",
-        "[This Unit] gains the [Trap-Panicked] status for [1] turn(s) <upon entering a [Booby Trap] tile> <with [80]% chance> <for [{Land} {non-[Armored]} {non-[Helicopter]} units> <for units without [{Trap-Aware} {Trap-Veteran} {Trap-Immune}]>",
-		"[This Unit] gains the [Trap-Panicked] status for [1] turn(s) <upon entering a [Booby Trap] tile> <with [60]% chance> <for [{Land} {non-[Armored]} {non-[Helicopter]} units> <for units with [Trap-Aware]>",
-		"[This Unit] gains the [Trap-Panicked] status for [1] turn(s) <upon entering a [Booby Trap] tile> <with [40]% chance> <for [{Land} {non-[Armored]} {non-[Helicopter]} units> <for units with [Trap-Veteran]>",
+        "[This Unit] loses [1] movement <upon entering a [Booby Trap] tile> <for [{Land} {non-[Armored]} {non-[Helicopter]}] units>",
+        "[This Unit] gains the [Trap-Panicked] status for [1] turn(s) <upon entering a [Booby Trap] tile> <with [80]% chance> <for [{Land} {non-[Armored]} {non-[Helicopter]}] units> <for units without [{Trap-Aware} {Trap-Veteran} {Trap-Immune}]>",
+		"[This Unit] gains the [Trap-Panicked] status for [1] turn(s) <upon entering a [Booby Trap] tile> <with [60]% chance> <for [{Land} {non-[Armored]} {non-[Helicopter]}] units> <for units with [Trap-Aware]>",
+		"[This Unit] gains the [Trap-Panicked] status for [1] turn(s) <upon entering a [Booby Trap] tile> <with [40]% chance> <for [{Land} {non-[Armored]} {non-[Helicopter]}] units> <for units with [Trap-Veteran]>",
 		
 		// "[This Unit] loses [1] movement <upon gaining the [Trap-Panicked] status>",
         "[This Unit] takes [5] damage <upon gaining the [Trap-Panicked] status> <for units without [{Trap-Aware} {Trap-Veteran} {Trap-Immune}]>",
@@ -13,7 +13,7 @@
 
         
 		// Trap Suppreseed: -10 sight, -10 movement so it can't retreat from melee (does it work?),
-		"[This Unit] gains the [Trap-Suppressed] status for [1] turn(s) <when defending> <in [Booby Trap] tiles]> <for units without [Trap-Suppressed]> <for [{Land} {non-[Armored]} {non-[Helicopter]} units> <for all movement>",
+		"[This Unit] gains the [Trap-Suppressed] status for [1] turn(s) <when defending> <in [Booby Trap] tiles]> <for units without [Trap-Suppressed]> <for [{Land} {non-[Armored]} {non-[Helicopter]}] units> <for all movement>",
         "[This Unit] takes [5] damage <upon gaining the [Trap-Suppressed] status> <for units without [Trap-Immune]>",
         "[This Unit] takes [5] damage <upon gaining the [Trap-Suppressed] status> <with [50]% chance>",
 		"[This Unit] gains the [Trap-Panicked] status for [2] turn(s) <upon gaining the [Trap-Suppressed] status>",
