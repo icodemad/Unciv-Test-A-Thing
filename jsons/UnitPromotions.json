@@ -45,6 +45,7 @@
 			"uniques": [
 				"Comment [Chance to trigger [Booby Trap] reduced to 0%.]",
 				"Can build [Set Booby Trap] improvements at a [+100]% rate",
+				"Unavailable",
 				"Comment [This promotion cannot be gained through XP.]",
 				"Comment [This promotion can be gained as a status from other promotions.]",
 				"Play [WLTK] sound"
@@ -53,6 +54,8 @@
 	{
 			"name": "Trap-Awareness Level Up",
 			"uniques": [
+				"Not shown on world screen",
+				"Will not be displayed in Civilopedia",
 				"[This Unit] gains the [Trap-Awareness I] promotion <for units without [{Trap-Awareness I} {Trap-Awareness II}]> <upon gaining the [Trap-Awareness Level Up] status> <removing the [Trap-Awareness Level Up] promotion/status>",
 				"[This Unit] gains the [Trap-Awareness II] promotion <for units with [Trap-Awareness I]> <upon gaining the [Trap-Awareness Level Up] status> <removing the [{Trap-Awareness I} {Trap-Awareness Level Up}] promotion/status>"
 				]
