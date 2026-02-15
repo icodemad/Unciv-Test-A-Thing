@@ -24,7 +24,8 @@
 			"unitTypes": ["Land"],
 			"prerequisites": ["Accuracy I","Barrage I","Shock I","Drill I","Scouting I","Survivalism I"],
 			"uniques": [
-				"Comment [Chance to trigger [Booby Trap] reduced to 60%.]",
+				"Comment [Chance to trigger [Booby Trap] reduced to 60%).]",
+				"Comment [This promotion can be gained by chance when interacting with [Booby Trap] tiles.]",
 				"Play [WLTK] sound"
 				]
 	},
@@ -33,7 +34,8 @@
 			"unitTypes": ["Land"],
 			"prerequisites": ["Trap-Awareness I"],
 			"uniques": [
-				"Comment [Chance to trigger [Booby Trap] reduced to 35%.]",
+				"Comment [Chance to trigger [Booby Trap] reduced to 30%.]",
+				"Comment [This promotion can be gained by chance when interacting with [Booby Traps] tiles.]",
 				"Play [WLTK] sound"
 				]
 	},
