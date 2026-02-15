@@ -2,35 +2,58 @@
   {
 			"name": "Trap-Panicked",
 			"uniques": [
-				"[-1] Movement",
 				"[-1] Sight",
-				"Play [bombard.mp3] sound"
+				"[-10%] Strength",
+				"Play [bombard] sound"
+				]
+	},
+	
+			/*
+			{
+					"name": "Trap-Suppressed",
+					"uniques": [
+						"[-10] Movement",
+						"[-10] Sight",
+						"Play [machinegun] sound"
+						]
+			},
+			*/
+	
+	{
+			"name": "Trap-Awareness I",
+			"unitTypes": ["Land"],
+			"prerequisites": ["Accuracy I","Barrage I","Shock I","Drill I","Scouting I","Survivalism I"],
+			"uniques": [
+				"Comment [Chance to trigger [Booby Trap] reduced to 60%.]",
+				"Play [WLTK] sound"
 				]
 	},
 	{
-			"name": "Trap-Suppressed",
+			"name": "Trap-Awareness II",
+			"unitTypes": ["Land"],
+			"prerequisites": ["Trap-Awareness I"],
 			"uniques": [
-				"[-10] Movement",
-				"[-10] Sight",
-				"Play [machinegun.mp3] sound"
+				"Comment [Chance to trigger [Booby Trap] reduced to 35%.]",
+				"Play [WLTK] sound"
 				]
 	},
 	{
-			"name": "Trap-Aware",
+			"name": "Trap-Awareness III",
+			//"prerequisites": ["Trap-Awareness II"],
 			"uniques": [
-				"Play [WLTK.ogg] sound"
+				"Comment [Chance to trigger [Booby Trap] reduced to 0%.]",
+				"Can build [Set Booby Trap] improvements at a [+100]% rate",
+				"Comment [This promotion cannot be gained through XP.]",
+				"Comment [This promotion can be gained as a status from other promotions.]",
+				"Play [WLTK] sound"
 				]
 	},
 	{
-			"name": "Trap-Veteran",
+			"name": "Trap-Awareness Level Up",
 			"uniques": [
-				"Play [WLTK.ogg] sound"
-				]
-	},
-	{
-			"name": "Trap-Immune",
-			"uniques": [
-				"Play [WLTK.ogg] sound"
+				"[This Unit] gains the [Trap-Awareness I] promotion <for units without [{Trap-Awareness I} {Trap-Awareness II}]> <upon gaining the [Trap-Awareness Level Up] status> <removing the [Trap-Awareness Level Up] promotion/status>",
+				"[This Unit] gains the [Trap-Awareness II] promotion <for units with [Trap-Awareness I]> <upon gaining the [Trap-Awareness Level Up] status> <removing the [{Trap-Awareness I} {Trap-Awareness Level Up}] promotion/status>"
 				]
 	}
+
 ]
