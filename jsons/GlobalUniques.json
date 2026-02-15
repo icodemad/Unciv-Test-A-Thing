@@ -1,30 +1,48 @@
 {
     "name": "Global Uniques",
     "unitUniques": [
+		// BOOBY TRAPS
+		// Whether triggering the trap or avoiding it, navigating a trap tile costs extra movement.
+		// Not done through terrain movement cost because some units have "ignore terrain costs" unique.
         "[This Unit] loses [1] movement <upon entering a [Booby Trap] tile> <for [{Land} {non-[Armored]} {non-[Helicopter]}] units>",
-        "[This Unit] gains the [Trap-Panicked] status for [1] turn(s) <upon entering a [Booby Trap] tile> <with [80]% chance> <for [{Land} {non-[Armored]} {non-[Helicopter]}] units> <for units without [{Trap-Aware} {Trap-Veteran} {Trap-Immune}]>",
-		"[This Unit] gains the [Trap-Panicked] status for [1] turn(s) <upon entering a [Booby Trap] tile> <with [60]% chance> <for [{Land} {non-[Armored]} {non-[Helicopter]}] units> <for units with [Trap-Aware]>",
-		"[This Unit] gains the [Trap-Panicked] status for [1] turn(s) <upon entering a [Booby Trap] tile> <with [40]% chance> <for [{Land} {non-[Armored]} {non-[Helicopter]}] units> <for units with [Trap-Veteran]>",
-		
-		// "[This Unit] loses [1] movement <upon gaining the [Trap-Panicked] status>",
-        "[This Unit] takes [5] damage <upon gaining the [Trap-Panicked] status> <for units without [{Trap-Aware} {Trap-Veteran} {Trap-Immune}]>",
-		"[This Unit] takes [5] damage <upon gaining the [Trap-Panicked] status> <with [75]% chance> <for units without [{Trap-Veteran} {Trap-Immune}]>",
-		"[This Unit] takes [5] damage <upon gaining the [Trap-Panicked] status> <with [50]% chance> <for units without [Trap-Immune]>",
+		// Trigger trap if we enter the trap tile, chance depends on unit expertise.
+        "[This Unit] gains the [Trap-Panicked] status for [2] turn(s) <upon entering a [Booby Trap] tile> <with [85]% chance> <for [{Land} {non-[Armored]} {non-[Helicopter]}] units> <for units without [{Trap-Awareness I} {Trap-Awareness II} {Trap-Awareness III}]>",
+		"[This Unit] gains the [Trap-Panicked] status for [2] turn(s) <upon entering a [Booby Trap] tile> <with [60]% chance> <for [{Land} {non-[Armored]} {non-[Helicopter]}] units> <for units with [{Trap-Awareness I} {non-[Trap-Awareness III]}]>",
+		"[This Unit] gains the [Trap-Panicked] status for [2] turn(s) <upon entering a [Booby Trap] tile> <with [35]% chance> <for [{Land} {non-[Armored]} {non-[Helicopter]}] units> <for units with [{Trap-Awareness II} {non-[Trap-Awareness III]}]>",
+
+		/*
+		// Trigger trap if we're attacked on a Booby Trap tile.
+		// (Sometimes good cover from enemy fire is the bait that springs traps.)
+		// This should probably trigger with low chance (e.g. 15%/10%/5%) otherwise it significantly increases the overall chance of trigger to nearly 100% if enemy covers their traps.
+		"[This Unit] gains the [Trap-Panicked] status for [2] turn(s) <when defending> <in [Booby Trap] tiles> <with [85]% chance> <for [{Land} {non-[Armored]} {non-[Helicopter]}] units> <for units without [{Trap-Awareness I} {Trap-Awareness II} {Trap-Awareness III}]>",
+		"[This Unit] gains the [Trap-Panicked] status for [2] turn(s) <when defending> <in [Booby Trap] tiles> <with [60]% chance> <for [{Land} {non-[Armored]} {non-[Helicopter]}] units> <for units with [{Trap-Awareness I} {non-[Trap-Awareness III]}]>",
+		"[This Unit] gains the [Trap-Panicked] status for [2] turn(s) <when defending> <in [Booby Trap] tiles> <with [35]% chance> <for [{Land} {non-[Armored]} {non-[Helicopter]}] units> <for units with [{Trap-Awareness II} {non-[Trap-Awareness III]}]>",
+		*/
+
+		// If a unit triggers a trap, it loses all movement.
+		// This represents time lost to rendering first aid, confusion, and wariness of more traps.
+		// Units also take direct damage (0-15 or 5-20??)
+		// This averages to very little damage: 2.5-6.5 depending on unit expertise. (+5 if we do 5-20).
+		// But if you do get hit for max damage (12.5% chance if triggered) that's quite dangerous in addition to penalties from Panic status
+		"[This Unit] loses [999] movement <upon gaining the [Trap-Panicked] status>",
+        "[This Unit] takes [5] damage <upon gaining the [Trap-Panicked] status>",
+		"[This Unit] takes [5] damage <upon gaining the [Trap-Panicked] status> <with [50]% chance>",
+		"[This Unit] takes [5] damage <upon gaining the [Trap-Panicked] status> <with [50]% chance>",
+		"[This Unit] takes [5] damage <upon gaining the [Trap-Panicked] status> <with [50]% chance>",
 
         
-		// Trap Suppreseed: -10 sight, -10 movement so it can't retreat from melee (does it work?),
-		"[This Unit] gains the [Trap-Suppressed] status for [1] turn(s) <when defending> <in [Booby Trap] tiles]> <for units without [Trap-Suppressed]> <for [{Land} {non-[Armored]} {non-[Helicopter]}] units> <for all movement>",
-        "[This Unit] takes [5] damage <upon gaining the [Trap-Suppressed] status> <for units without [Trap-Immune]>",
-        "[This Unit] takes [5] damage <upon gaining the [Trap-Suppressed] status> <with [50]% chance>",
-		"[This Unit] gains the [Trap-Panicked] status for [2] turn(s) <upon gaining the [Trap-Suppressed] status>",
+		
+		// Gain trap experience by triggering Booby Trap tile, after Panic status fades in 2 turns (20% chance).
+		"[This Unit] gains the [Trap-Awareness Level Up] promotion <upon losing the [Trap-Panicked] status> <with [20]% chance>",
+		// Gain trap experience by entering Booby Trap tiles (5% chance, whether triggered or not), but only in non-friendly land.
+		// Can't gain experience if currently have immune status (Trap-Awareness III) to avoid exploit.
+		"[This Unit] gains the [Trap-Awareness Level Up] promotion <upon entering a [{Foreign Land} {Booby Trap}] tile> <for units without [Trap-Awareness III]> <with [5]% chance>",
+		
 
-		// exploit alert: if units get Panicked after entering trap tiles, and gain resistance upgrades after losing it, they can build their own traps to gain immunity. Maybe require trap suppressed to gain promotions.
-        "[This Unit] gains the [Trap-Aware] promotion <for units without [{Trap-Aware} {Trap-Veteran} {Trap-Immune}]> <upon losing the [Trap-Panicked] status> <with [33]% chance>",
-		"[This Unit] gains the [Trap-Veteran] promotion <for units with [Trap-Aware]> <upon losing the [Trap-Panicked] status> <with [33]% chance> <removing the [Trap-Aware] promotion/status> ",
-
+		// MINEFIELDS
 		"[This Unit] gains the [Trap-Panicked] status for [1] turn(s) <upon entering a [Minefield] tile>",
 		"[This Unit] takes [10] damage <upon entering a [Minefield] tile>",
-		"Play [elephant.mp3] sound <upon entering a [Minefield] tile>"
+		"Play [elephant] sound <upon entering a [Minefield] tile>"
         ],
     "civilopediaText": [
         {"text": "Global uniques are ruleset-wide modifiers that apply to all civilizations."}
