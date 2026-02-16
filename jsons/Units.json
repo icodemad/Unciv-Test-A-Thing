@@ -1,4 +1,6 @@
 [
+
+	/*	
 	{
     	"name": "Worker",
 		"unitType": "Civilian",
@@ -11,6 +13,8 @@
         ]
 		"cost": 70
 	},
+	*/
+	
 	/*
 	{
 		"name": "Marine",
