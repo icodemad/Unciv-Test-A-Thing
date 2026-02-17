@@ -5,7 +5,7 @@
 	"occursOn": ["Plains","Grassland","Desert","Tundra","Snow","Hill","Forest","Jungle"],
 	"overrideStats": true,
 	"movementCost": 1,
-	"defenceBonus": -0.15
+	// "defenceBonus": -0.15
 	"uniques": ["Doesn't generate naturally"],
 	"civilopediaText": [{"text":"It's a trap!", "link":"Improvement/Booby Trap"}]
 	},
@@ -17,5 +17,15 @@
     "movementCost": 1,
     "uniques": ["Doesn't generate naturally"],
   	"civilopediaText": [{"text":"Someone left a foot behind", "link":"Improvement/Booby Trap"}]
+	},
+	{
+	"name": "Minefield",
+	"type": "TerrainFeature",
+	"occursOn": ["Plains","Grassland","Desert","Tundra","Snow","Hill","Forest","Jungle"],
+	"overrideStats": true,
+	"movementCost": 4,
+	"defenceBonus": -0.15
+	"uniques": ["Doesn't generate naturally"],
+	"civilopediaText": [{"text":"'One wrong step and...' *finger burst gesture*", "link":"Improvement/Minefield"}]
 	}
 ]
