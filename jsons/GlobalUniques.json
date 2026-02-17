@@ -14,9 +14,9 @@
 		// Trigger trap if we're attacked on a Booby Trap tile.
 		// (Sometimes good cover from enemy fire is the bait that springs traps.)
 		// This should probably trigger with low chance (e.g. 15%/10%/5%) otherwise it significantly increases the overall chance of trigger to nearly 100% if enemy covers their traps.
-		"[This Unit] gains the [Trap-Panicked] status for [2] turn(s) <when defending> <in [Booby Trap] tiles> <with [85]% chance> <for [{Land} {non-[Armored]} {non-[Helicopter]}] units> <for units without [{Trap-Awareness I} {Trap-Awareness II} {Trap-Awareness III}]>",
-		"[This Unit] gains the [Trap-Panicked] status for [2] turn(s) <when defending> <in [Booby Trap] tiles> <with [60]% chance> <for [{Land} {non-[Armored]} {non-[Helicopter]}] units> <for units with [{Trap-Awareness I} {non-[Trap-Awareness III]}]>",
-		"[This Unit] gains the [Trap-Panicked] status for [2] turn(s) <when defending> <in [Booby Trap] tiles> <with [35]% chance> <for [{Land} {non-[Armored]} {non-[Helicopter]}] units> <for units with [{Trap-Awareness II} {non-[Trap-Awareness III]}]>",
+		"[This Unit] gains the [Trap-Panicked] status for [2] turn(s) <when defending> <in [Booby Trap] tiles> <with [15]% chance> <for [{Land} {non-[Armored]} {non-[Helicopter]}] units> <for units without [{Trap-Awareness I} {Trap-Awareness II} {Trap-Awareness III}]>",
+		"[This Unit] gains the [Trap-Panicked] status for [2] turn(s) <when defending> <in [Booby Trap] tiles> <with [10]% chance> <for [{Land} {non-[Armored]} {non-[Helicopter]}] units> <for units with [{Trap-Awareness I} {non-[Trap-Awareness III]}]>",
+		"[This Unit] gains the [Trap-Panicked] status for [2] turn(s) <when defending> <in [Booby Trap] tiles> <with [5]% chance> <for [{Land} {non-[Armored]} {non-[Helicopter]}] units> <for units with [{Trap-Awareness II} {non-[Trap-Awareness III]}]>",
 		*/
 
 		// If a unit triggers a trap, it loses all movement.
@@ -24,11 +24,13 @@
 		// Units also take direct damage (0-15 or 5-20??)
 		// This averages to very little damage: 2.5-6.5 depending on unit expertise. (+5 if we do 5-20).
 		// But if you do get hit for max damage (12.5% chance if triggered) that's quite dangerous in addition to penalties from Panic status
-		"[This Unit] loses [999] movement <upon gaining the [Trap-Panicked] status>",
-        "[This Unit] takes [5] damage <upon gaining the [Trap-Panicked] status>",
-		"[This Unit] takes [5] damage <upon gaining the [Trap-Panicked] status> <with [50]% chance>",
-		"[This Unit] takes [5] damage <upon gaining the [Trap-Panicked] status> <with [50]% chance>",
-		"[This Unit] takes [5] damage <upon gaining the [Trap-Panicked] status> <with [50]% chance>",
+		"Play [boobyTrap] sound <upon gaining the [Trap-Panicked] status> <in [Booby Trap] tiles>",
+		"[This Unit] loses [999] movement <upon gaining the [Trap-Panicked] status> <in [Booby Trap] tiles>",
+        "[This Unit] takes [5] damage <upon gaining the [Trap-Panicked] status> <in [Booby Trap] tiles>",
+		"[This Unit] takes [5] damage <upon gaining the [Trap-Panicked] status> <in [Booby Trap] tiles> <with [50]% chance> ",
+		"[This Unit] takes [5] damage <upon gaining the [Trap-Panicked] status> <in [Booby Trap] tiles> <with [50]% chance> ",
+		"[This Unit] takes [5] damage <upon gaining the [Trap-Panicked] status> <in [Booby Trap] tiles> <with [50]% chance> ",
+		// "Turn this tile into a [non-[Booby Trap]] tile <upon entering a [Booby Trap] tile>",  // <upon gaining the [Trap-Panicked] status> <with [50]% chance>",
 
         
 		
@@ -40,9 +42,19 @@
 		
 
 		// MINEFIELDS
-		"[This Unit] gains the [Trap-Panicked] status for [1] turn(s) <upon entering a [Minefield] tile>",
-		"[This Unit] takes [10] damage <upon entering a [Minefield] tile>",
-		"Play [elephant] sound <upon entering a [Minefield] tile>"
+		"[This Unit] gains the [Trap-Panicked] status for [1] turn(s) <upon entering a [Minefield] tile> <for [{Land} {non-[Armored]} {non-[Helicopter]}] units>",
+		"Play [minefield] sound <upon gaining the [Trap-Panicked] status> <in [Minefield] tiles>"
+		"[This Unit] loses [999] movement <upon gaining the [Trap-Panicked] status> <in [Minefield] tiles>",
+		"[This Unit] takes [10] damage <upon gaining the [Trap-Panicked] status> <in [Minefield] tiles>",
+		"[This Unit] takes [5] damage <upon gaining the [Trap-Panicked] status> <in [Minefield] tiles> <with [50]% chance>",
+		"[This Unit] takes [5] damage <upon gaining the [Trap-Panicked] status> <in [Minefield] tiles> <with [50]% chance>",
+		"[This Unit] takes [5] damage <upon gaining the [Trap-Panicked] status> <in [Minefield] tiles> <with [50]% chance>",
+		"[This Unit] takes [1] damage <upon gaining the [Trap-Panicked] status> <in [Minefield] tiles> <with [10]% chance>",
+		"[This Unit] takes [1] damage <upon gaining the [Trap-Panicked] status> <in [Minefield] tiles> <with [35]% chance>",
+		"[This Unit] takes [1] damage <upon gaining the [Trap-Panicked] status> <in [Minefield] tiles> <with [50]% chance>",
+		"[This Unit] takes [1] damage <upon gaining the [Trap-Panicked] status> <in [Minefield] tiles> <with [65]% chance>",
+		"[This Unit] takes [1] damage <upon gaining the [Trap-Panicked] status> <in [Minefield] tiles> <with [90]% chance>",
+		
         ],
     "civilopediaText": [
         {"text": "Global uniques are ruleset-wide modifiers that apply to all civilizations."}
