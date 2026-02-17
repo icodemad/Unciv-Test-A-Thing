@@ -9,27 +9,11 @@
 		"uniques": [
 			"Can be built outside your borders",
 			"Turn this tile into a [Booby Trap] tile",
-			"Cannot be built on [Booby Trap] tiles"
+			// "Cannot be built on [Booby Trap] tiles",
+			"Cannot be built on [all] tiles <within [1] tiles of a [Booby Trap]>"
         ],
 		// "shortcutKey": "B"
-		"civilopediaText": [{"text":"It's a trap!", "link":"Improvement/Booby Trap"}]
-	},
-	
-	{
-		"name": "Minefield",
-		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Tundra","Snow","Hill","Forest","Jungle"],
-		"turnsToBuild": 1,
-		"techRequired": "Agriculture",
-		"movementCost": 1,
-		
-		"uniques": [
-			"Can be built outside your borders",
-			"Turn this tile into a [Minefield] tile",
-			"Cannot be built on [Minefield] tiles"
-        	// "[-10 Food, -10 Production, -10 Gold, -10 Culture, -10 Science, -10 Faith]",
-			
-        ]
-		// "shortcutKey": "B"
+		"civilopediaText": [{"text":"It's a trap!", "link":"Terrain/Booby Trap"}]
 	},
 
 	{
@@ -40,6 +24,24 @@
 			"Can be built outside your borders",
 			"Excluded from map editor"
 			]
+		// "shortcutKey": "B"
+	},
+
+	{
+		"name": "Minefield",
+		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Tundra","Snow","Hill","Forest","Jungle"],
+		"turnsToBuild": 1,
+		"techRequired": "Agriculture",
+		"movementCost": 1,
+		
+		"uniques": [
+			"Can be built outside your borders",
+			"Turn this tile into a [Minefield] tile",
+			"Cannot be built on [Minefield] tiles",
+			"Unpillagable"
+        	// "[-10 Food, -10 Production, -10 Gold, -10 Culture, -10 Science, -10 Faith]",
+			
+        ]
 		// "shortcutKey": "B"
 	},
 
