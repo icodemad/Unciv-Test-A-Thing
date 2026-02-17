@@ -24,7 +24,9 @@
 		
 		"uniques": [
 			"Can be built outside your borders",
-        	"[-10 Food, -10 Production, -10 Gold, -10 Culture, -10 Science, -10 Faith]",
+			"Turn this tile into a [Minefield] tile",
+			"Cannot be built on [Minefield] tiles"
+        	// "[-10 Food, -10 Production, -10 Gold, -10 Culture, -10 Science, -10 Faith]",
 			
         ]
 		// "shortcutKey": "B"
