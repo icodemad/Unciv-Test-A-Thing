@@ -6,17 +6,17 @@
 		// Not done through terrain movement cost because some units have "ignore terrain costs" unique.
         "[This Unit] loses [1] movement <upon entering a [Booby Trap] tile> <for [{Land} {non-[Armored]} {non-[Helicopter]}] units>",
 		// Trigger trap if we enter the trap tile, chance depends on unit expertise.
-        "[This Unit] gains the [Trap-Panicked] status for [2] turn(s) <upon entering a [Booby Trap] tile> <with [85]% chance> <for [{Land} {non-[Armored]} {non-[Helicopter]}] units> <for units without [{Trap-Awareness I} {Trap-Awareness II} {Trap-Awareness III}]>",
-		"[This Unit] gains the [Trap-Panicked] status for [2] turn(s) <upon entering a [Booby Trap] tile> <with [60]% chance> <for [{Land} {non-[Armored]} {non-[Helicopter]}] units> <for units with [{Trap-Awareness I} {non-[Trap-Awareness III]}]>",
-		"[This Unit] gains the [Trap-Panicked] status for [2] turn(s) <upon entering a [Booby Trap] tile> <with [35]% chance> <for [{Land} {non-[Armored]} {non-[Helicopter]}] units> <for units with [{Trap-Awareness II} {non-[Trap-Awareness III]}]>",
+        "[This Unit] gains the [Trap-Panicked] status for [2] turn(s) <upon entering a [Booby Trap] tile> <with [85]% chance> <for [{Land} {non-[Armored]} {non-[Helicopter]}] units> <for units without [Trap-Awareness I]> <for units without [Trap-Awareness II]> <for units without [Trap-Awareness III]>",
+		"[This Unit] gains the [Trap-Panicked] status for [2] turn(s) <upon entering a [Booby Trap] tile> <with [60]% chance> <for [{Land} {non-[Armored]} {non-[Helicopter]}] units> <for units with [Trap-Awareness I]> <for units without [Trap-Awareness III]>",
+		"[This Unit] gains the [Trap-Panicked] status for [2] turn(s) <upon entering a [Booby Trap] tile> <with [35]% chance> <for [{Land} {non-[Armored]} {non-[Helicopter]}] units> <for units with [Trap-Awareness II]> <for units without [Trap-Awareness III]>",
 
 		/*
 		// Trigger trap if we're attacked on a Booby Trap tile.
 		// (Sometimes good cover from enemy fire is the bait that springs traps.)
 		// This should probably trigger with low chance (e.g. 15%/10%/5%) otherwise it significantly increases the overall chance of trigger to nearly 100% if enemy covers their traps.
-		"[This Unit] gains the [Trap-Panicked] status for [2] turn(s) <when defending> <in [Booby Trap] tiles> <with [15]% chance> <for [{Land} {non-[Armored]} {non-[Helicopter]}] units> <for units without [{Trap-Awareness I} {Trap-Awareness II} {Trap-Awareness III}]>",
-		"[This Unit] gains the [Trap-Panicked] status for [2] turn(s) <when defending> <in [Booby Trap] tiles> <with [10]% chance> <for [{Land} {non-[Armored]} {non-[Helicopter]}] units> <for units with [{Trap-Awareness I} {non-[Trap-Awareness III]}]>",
-		"[This Unit] gains the [Trap-Panicked] status for [2] turn(s) <when defending> <in [Booby Trap] tiles> <with [5]% chance> <for [{Land} {non-[Armored]} {non-[Helicopter]}] units> <for units with [{Trap-Awareness II} {non-[Trap-Awareness III]}]>",
+		"[This Unit] gains the [Trap-Panicked] status for [2] turn(s) <when defending> <in [Booby Trap] tiles> <with [15]% chance> <for [{Land} {non-[Armored]} {non-[Helicopter]}] units> <for units without [Trap-Awareness I]> <for units without [Trap-Awareness II]> <for units without [Trap-Awareness III]>",
+		"[This Unit] gains the [Trap-Panicked] status for [2] turn(s) <when defending> <in [Booby Trap] tiles> <with [10]% chance> <for [{Land} {non-[Armored]} {non-[Helicopter]}] units> <for units with [Trap-Awareness I]> <for units without [Trap-Awareness III]>",
+		"[This Unit] gains the [Trap-Panicked] status for [2] turn(s) <when defending> <in [Booby Trap] tiles> <with [5]% chance> <for [{Land} {non-[Armored]} {non-[Helicopter]}] units> <for units with [Trap-Awareness II]> <for units without [Trap-Awareness III]>",
 		*/
 
 		// If a unit triggers a trap, it loses all movement.
