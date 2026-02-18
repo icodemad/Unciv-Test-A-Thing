@@ -21,7 +21,7 @@
 	
 	{
 			"name": "Trap-Awareness I",
-			"unitTypes": ["Land"],
+			"unitTypes": ["Scout","Recon","Gunpowder","Ranged Gunpowder","Melee","Ranged"],
 			"prerequisites": ["Accuracy I","Barrage I","Shock I","Drill I","Scouting I","Survivalism I"],
 			"uniques": [
 				"Comment [Chance to trigger [Booby Trap] reduced to 60%).]",
@@ -31,7 +31,7 @@
 	},
 	{
 			"name": "Trap-Awareness II",
-			"unitTypes": ["Land"],
+			"unitTypes": ["Scout","Recon","Gunpowder","Ranged Gunpowder","Melee","Ranged"],
 			"prerequisites": ["Trap-Awareness I"],
 			"uniques": [
 				"Comment [Chance to trigger [Booby Trap] reduced to 30%.]",
@@ -56,8 +56,8 @@
 			"uniques": [
 				"Not shown on world screen",
 				"Will not be displayed in Civilopedia",
-				"[This Unit] gains the [Trap-Awareness I] promotion <for units without [{Trap-Awareness I} {Trap-Awareness II}]> <upon gaining the [Trap-Awareness Level Up] status> <removing the [Trap-Awareness Level Up] promotion/status>",
-				"[This Unit] gains the [Trap-Awareness II] promotion <for units with [Trap-Awareness I]> <upon gaining the [Trap-Awareness Level Up] status> <removing the [{Trap-Awareness I} {Trap-Awareness Level Up}] promotion/status>"
+				"[This Unit] gains the [Trap-Awareness I] promotion <for units without [Trap-Awareness I]> <for units without [Trap-Awareness II]> <upon gaining the [Trap-Awareness Level Up] status> <removing the [Trap-Awareness Level Up] promotion/status>",
+				"[This Unit] gains the [Trap-Awareness II] promotion <for units with [Trap-Awareness I]> <upon gaining the [Trap-Awareness Level Up] status> <removing the [Trap-Awareness I] promotion/status> <removing the [Trap-Awareness Level Up] promotion/status>"
 				]
 	}
 
