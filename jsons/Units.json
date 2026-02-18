@@ -9,7 +9,7 @@
 		"obsoleteTech": "Metal Casting",
 		// "upgradesTo": ["Worker","Scout"],
 		"uniques": ["May upgrade to [Spearman] through ruins-like effects",
-			"[This Unit] takes [5] damage <upon entering a [Featureless] tile>"
+			"Flying <within [4] tiles of a [City center]>"
 		    ]
 		"attackSound": "nonmetalhit",
         "civilopediaText": [
