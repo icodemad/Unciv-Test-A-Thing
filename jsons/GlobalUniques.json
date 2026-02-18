@@ -1,0 +1,11 @@
+{
+    "name": "Global Uniques",
+    "unitUniques": [
+        "[This Unit] heals [2] HP <if it hasn't used other actions yet> <when below [40] HP> <for [Water] units>",
+        "All tiles cost 1 movement <for [Flying] units>",
+        "[+1] Movement <for [Flying] units>"
+    ],
+    "civilopediaText": [
+        {"text": "Global uniques are ruleset-wide modifiers that apply to all civilizations."}
+    ]
+}
