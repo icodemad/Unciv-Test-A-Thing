@@ -1,0 +1,24 @@
+
+
+[
+    {
+		"name": "Strategic Reserve",
+	    "terrainsCanBeBuiltOn": ["Grassland","Plains","Desert","Tundra","Snow"],
+	    "turnsToBuild": 6,
+	    "techRequired": "Engineering",
+	    "uniques": [
+	        //Instantly gain [1] [proxy] <for every [((1+FLOOR([Cities]/4)) + 3 - ABS((1+FLOOR([Cities]/4)) - 3)) / 2]>
+
+      
+			"Provides [1] [Horses] <for every [Cities]>"
+      // <when below [1] [Uranium]>",
+			//"Provides [1] [Uranium] <when below [2] [Uranium]> <when number of [Cities] is more than [3]>",
+			//"Provides [1] [Uranium] <when below [3] [Uranium]> <when number of [Cities] is more than [7]>",
+			
+	        //"Tile provides yield without assigned population",
+	        //"Will not be replaced by automated units",
+	        //"Unpillagable"
+	        ]
+	    //"shortcutKey": "N"
+	  }
+]
