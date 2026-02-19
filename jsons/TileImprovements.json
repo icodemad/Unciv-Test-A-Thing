@@ -11,7 +11,9 @@
 
       
 //			"Provides [1] [Horses] <for every [Cities]>"
-			"Provides [1] [Horses] <when below [1] [Horses]>"
+			"Provides [1] [Horses] <when below [1] [Horses]>",
+			"Provides [1] [Horses] <when below [2] [Horses]> <when number of [Cities] is more than [1]>",
+			"Provides [1] [Horses] <when below [3] [Horses]> <when number of [Cities] is more than [2]>"
       // <when below [1] [Uranium]>",
 			//"Provides [1] [Uranium] <when below [2] [Uranium]> <when number of [Cities] is more than [3]>",
 			//"Provides [1] [Uranium] <when below [3] [Uranium]> <when number of [Cities] is more than [7]>",
