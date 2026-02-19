@@ -10,7 +10,7 @@
 		"defenceBonus": 0.25,
 		"occursOn": ["Tundra","Plains","Grassland","Hill"],
 		"uniques": ["Rough terrain", "Vegetation",
-          "Turn this tile into a [Jungle] tile <upon turn end>",
+          // "Turn this tile into a [Jungle] tile <upon turn end>",
 					"Provides a one-time bonus of [+30 Production] to the closest city when cut down <(modified by game speed)>",
 					"Blocks line-of-sight from tiles at same elevation",
 					"[25]% Chance to be destroyed by nukes",
@@ -35,7 +35,7 @@
 		"occursOn": ["Plains","Grassland"],
 		"uniques": [
 			"Rough terrain", "Vegetation",
-      "Turn this tile into a [Fallout] tile <upon turn end>",
+      		// "Turn this tile into a [Fallout] tile <upon turn end>",
 			"Blocks line-of-sight from tiles at same elevation",
 			"[25]% Chance to be destroyed by nukes",
 			"[-1] to Fertility for Map Generation",
@@ -70,7 +70,7 @@
     ],
 		// For map editor only - the generator won't place it without code or enabling uniques
 		// If the map generator is ever updated to always take these into account, it should also take the "Doesn't generate naturally" unique into account
-		"occursOn": ["Grassland","Plains","Desert","Tundra","Snow","Forest","Jungle","Hill","Flood plains","Marsh","Oasis"],
+		"occursOn": ["Grassland","Plains","Desert","Tundra","Snow","Hill","Flood plains","Marsh","Oasis"],
 		"defenceBonus": -0.15
 	}
 ]
