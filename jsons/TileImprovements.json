@@ -10,7 +10,8 @@
 	        //Instantly gain [1] [proxy] <for every [((1+FLOOR([Cities]/4)) + 3 - ABS((1+FLOOR([Cities]/4)) - 3)) / 2]>
 
       
-			"Provides [1] [Horses] <for every [Cities]>"
+//			"Provides [1] [Horses] <for every [Cities]>"
+			"Provides [1] [Horses] <when below [1] [Horses]>"
       // <when below [1] [Uranium]>",
 			//"Provides [1] [Uranium] <when below [2] [Uranium]> <when number of [Cities] is more than [3]>",
 			//"Provides [1] [Uranium] <when below [3] [Uranium]> <when number of [Cities] is more than [7]>",
