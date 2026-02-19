@@ -13,6 +13,7 @@
 			"Doesn't generate naturally",
 			// "Has an elevation of [2] for visibility calculations",
 			// "Units ending their turn on this terrain take [50] damage",
+			"Utility Support Systems <in tiles adjacent to [Utility Support Systems] tiles>",
 			"Turn this tile into a [Mountain] tile <upon building a [Mountain Complex] improvement> <in tiles not adjacent to [Mountain Complex] tiles>"  /* Reverts to real Mountain without Mountain Complex */
 		]
   },
@@ -27,7 +28,7 @@
             "Has an elevation of [2] for visibility calculations",
             "Occurs in chains at high elevations",
             "Units ending their turn on this terrain take [50] damage <in tiles not adjacent to [{Friendly} {Mountain Complex}] tiles>",
-            "Units ending their turn on this terrain take [10] damage <in tiles adjacent to [{Friendly} {Mountain Complex}] tiles> <in tiles without [Tunnels]>",
+            "Units ending their turn on this terrain take [5] damage <in tiles adjacent to [{Friendly} {Mountain Complex}] tiles> <in tiles without [Tunnels]>",
 			"Always Fertility [-2] for Map Generation",
             "Considered [Undesirable] when determining start locations"
             ]
