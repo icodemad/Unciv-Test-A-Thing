@@ -11,7 +11,7 @@
 		"uniques": ["May upgrade to [Spearman] through ruins-like effects",
 			"Flying <within [4] tiles of a [City center]>",
 			"Turn this tile into a [Fallout] tile <upon entering a [Vegetation] tile>",
-			"Turn this tile into a [Forest] tile <upon entering a [Fallout] tile>"
+			"Turn this tile into a [Nope] tile <upon entering a [Fallout] tile>"
 		    ]
 		"attackSound": "nonmetalhit",
         "civilopediaText": [
