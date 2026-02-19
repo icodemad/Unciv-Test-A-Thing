@@ -1,17 +1,43 @@
 {
     "name": "Global Uniques",
     "uniques": [
-        "Land units may cross [{your} {Mountain}] tiles after the first [Land] is earned <in [{your} {Mountain Complex}] tiles>",
-        "Land units may cross [{your} {Tunnels}] tiles after the first [Land] is earned <in [{your} {Tunnels}] tiles>"
+        "Land units may cross [{your} {Mountain}] tiles after the first [Land] is earned <for [Personnel] units> <in [{your} {Mountain Complex}] tiles>",
+        "Land units may cross [{your} {Tunnels} {Mountain}] tiles after the first [Land] is earned <for [Personnel] units> <in [{your} {Tunnels} {Mountain}] tiles>"
+        
         ],
     "unitUniques": [
+        "Terrestrial <for [{Land} {non-[Helicopter]} {non-[UAV]} {non-[Drone]}] units>",
+        "Personnel <for [{Terrestrial} {non-[Armored]}] units>",
+        "Materiel <for [non-[Personnel]] units>",
+        
         "[This Unit] heals [2] HP <if it hasn't used other actions yet> <when below [40] HP> <for [Water] units>",
+        
         // "Can pass through impassable tiles <for [Land] units> <in [{your} {Mountain Complex}] tiles>",
-        // "Can pass through impassable tiles <for [Land] units> <in [{your} {MountainB}] tiles> <in tiles adjacent to [{your} {Mountain Complex}] tiles>", //In Fake Mountain "​"
-        "Cannot attack <when fighting in [MountainB] tiles> <vs [non-[Helicopter]] units>", // <within [2] tiles of a [Mountain Complex]>", // No attacking in Mountain Complex Mountains, but catches some regular mountains too because we can't detect target tile adjacencies.
-        "Cannot attack <in [MountainB] tiles>", // <in tiles adjacent to [{your} {Mountain Complex}] tiles>", //No attacking from Mountain Complex Tunnels
-        "Invisible <for [{Land} {non-[Helicopter]}] units> <in [{your} {Mountain Complex}] tiles>",
-        "Invisible <for [{Land} {non-[Helicopter]}] units> <in [{your} {MountainB}] tiles>"
+        // "Can pass through impassable tiles <for [Land] units> <in [{your} {Tunnels} {Mountain}] tiles> <in tiles adjacent to [{your} {Mountain Complex}] tiles>",  //In Fake Mountain "​",
+        "Cannot attack <when fighting in [Tunnels] tiles> <vs [Personnel] units>",  // <within [2] tiles of a [Mountain Complex]>", // No attacking in Mountain Complex Mountains, but catches some regular mountains too because we can't detect target tile adjacencies.
+        "Cannot attack <in [Tunnels] tiles> <for [Personnel] units> ", // <in tiles adjacent to [{your} {Mountain Complex}] tiles>", //No attacking from Mountain Complex Tunnels
+        "Invisible <for [Terrestrial] units> <in [{your} {Tunnels}] tiles>",
+        "Invisible <for [Terrestrial] units> <in [{your} {Tunnels}] tiles>",
+
+
+        // Units need air conditioning, power generation, water storage and purification, biological waste management, and other support systems in Tunnels.
+        "Can only heal by pillaging <in [{Tunnels} {non-[Utility Support Systems]}] tiles> <for [Terrestrial] units>" // Stop healing without nearby Facility Support Systems module.
+        "[This Unit] takes [1] damage <upon turn end> <in [non-[Utility Support Systems]] tiles> <for [Terrestrial] units>" //Using this unique is necessary because `Units ending their turn on this terrain take [amount] damage` causes unit automation to avoid entering the tile.
+
+        // We want nuclear weapons to have minimal effect against mountain bunkers.
+        // But damage is hard coded to 100% at groundzero.  Nuclear Strength == 0 deals 20-50% damage in non-groundzero tiles.
+        // This means nuclear weapons of strength not equal to 2 detonated beside the mountain complex will deal more
+        // damage in the complex than if it had been targeting directly inside the complex.
+        // One way to prevent this is to cause tiles surrounding the complex to adopt a special unique when beside a mountain complex or tunnels tile,
+        // and then tiles ringing those to gain a different special unique, so we have a two-tile buffer outside the complex where nuclear strength is reduced.
+        // Doing this, of course, also affects nuclear damage and effects outside the bunker.
+        // No fine-tuned control or targeting of the damage is currently possible,
+        // and units cannot gain damage resistance or detect when when they've been targeted by a nuke.
+        "Nuclear weapon of Strength [0] <for [Nuclear weapon of Strength] units> <when fighting in [Tunnels] tiles>", // Do we need to include the parameter for the unique used in unit type conditional???
+        // If there's nothing we can do about ground zero anyway, at least we can localize the damage by change the blast radius?
+        // But again, targeting just outside the bunker will affect bunker tiles as normal tiles.
+        "Blast radius [0] <for [Nuclear Weapon] units> <when fighting in [Tunnels] tiles>",
+
     ],
     "civilopediaText": [
         {"text": "Global uniques are ruleset-wide modifiers that apply to all civilizations."}
