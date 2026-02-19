@@ -4,7 +4,7 @@
     {
 		"name": "Strategic Reserve",
 	    "terrainsCanBeBuiltOn": ["Grassland","Plains","Desert","Tundra","Snow"],
-	    "turnsToBuild": 6,
+	    "turnsToBuild": 1,
 	    "techRequired": "Engineering",
 	    "uniques": [
 	        //Instantly gain [1] [proxy] <for every [((1+FLOOR([Cities]/4)) + 3 - ABS((1+FLOOR([Cities]/4)) - 3)) / 2]>
