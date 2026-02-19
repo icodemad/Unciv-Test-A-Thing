@@ -72,5 +72,18 @@
 		// If the map generator is ever updated to always take these into account, it should also take the "Doesn't generate naturally" unique into account
 		"occursOn": ["Grassland","Plains","Desert","Tundra","Snow","Forest","Jungle","Hill","Flood plains","Marsh","Oasis"],
 		"defenceBonus": -0.15
+	},
+	{
+		"name": "Nope",
+		"type": "TerrainFeature",
+		"movementCost": 1,
+		"unbuildable": true,
+		"uniques": ["Doesn't generate naturally"
+    //"Turn this tile into a [Forest] tile <upon turn end>"
+    ],
+		// For map editor only - the generator won't place it without code or enabling uniques
+		// If the map generator is ever updated to always take these into account, it should also take the "Doesn't generate naturally" unique into account
+		"occursOn": ["Grassland","Plains","Desert","Tundra","Snow","Forest","Jungle","Hill","Flood plains","Marsh","Oasis"],
+		
 	}
 ]
