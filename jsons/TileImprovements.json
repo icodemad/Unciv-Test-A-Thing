@@ -39,15 +39,83 @@
   {
 
 	  // Defense Command Center - "[+2 Happiness] <when at war>",
-	  // Communications Control Center - "[+1]% Strength <for [All] units> <for every [{Hostile} {Atomic Bomb}]> <for every [{Hostile} {Nuclear Missile}]>",
+	  // Communications Control Center - "[+1]% Strength <for [All] units> <for every [[{Hostile} {Nuclear Weapon}] Units]>",
 	  // Aerospace Surveillance Command / Missile Warning Center - 
 	  										//[+]% Damage when intercepting <for 
-	  										//Population loss from nuclear attacks [-2]% [in all cities] <for every [[{Open Borders} {Ballistic Missile Early Warning System}] Tiles]>
-											//Damage to garrison from nuclear attacks [-2]% [in all cities] <for every [[{Open Borders} {Ballistic Missile Early Warning System}] Tiles]>
+	  										//Population loss from nuclear attacks [-2]% [in all cities] <for every [[{Open Borders} {Ballistic Missile EWS}] Tiles]>
+											//Damage to garrison from nuclear attacks [-2]% [in all cities] <for every [[{Open Borders} {Ballistic Missile EWS}] Tiles]>
  											//<for every [{Open Borders} {Nuclear Missile}]>
 	// Facility Support Systems - "Tile provides yield without assigned population"
 	// Nuclear Enrichment Facility 
 	// 
+
+
+
+	  										
+{
+	"name": "Aerospace Surveillance Command",
+    "terrainsCanBeBuiltOn": ["Tunnels"],
+    "turnsToBuild": 6,
+    "techRequired": "Engineering",
+    "uniques": [
+        "Can only be built on [{Friendly} {Mountain} {Tunnel}] tiles",
+        "Costs [2] [Gold] per turn",
+
+		//[+]% Damage when intercepting <for ,
+		"Population loss from nuclear attacks [-1]% [in all cities] <for every [[{Open Borders} {Ballistic Missile EWS}] Tiles]>",
+		"Damage to garrison from nuclear attacks [-1]% [in all cities] <for every [[{Open Borders} {Ballistic Missile EWS}] Tiles]>",
+		
+		"Population loss from nuclear attacks [-2]% [in all cities] <in cities with a [Bomb Shelter]> <for every [[{Open Borders} {Ballistic Missile EWS}] Tiles]>",
+		"Damage to garrison from nuclear attacks [-2]% [in all cities] <in cities with a [Bomb Shelter]> <for every [[{Open Borders} {Ballistic Missile EWS}] Tiles]>",
+		
+        "Will not be replaced by automated units",
+        "Unpillagable",
+        ],
+    //"shortcutKey": "N"
+},
+
+
+{
+	"name": "Strategic Reserve",
+    "terrainsCanBeBuiltOn": ["Tunnels"],
+    "turnsToBuild": 6,
+    "techRequired": "Engineering",
+    "uniques": [
+        "Can only be built on [{Friendly} {Mountain} {Tunnel}] tiles",
+        "Costs [2] [Gold] per turn",
+		"Provides [+2] [Oil]",
+		"Provides [+1] [Oil] <for every [3] [Cities]>",
+		"Provides [+1] [Aluminum] <when below [3] [Aluminum]> <for every [3] [Cities]>",
+		"Provides [+1] [Uranium] <when below [3] [Uranium]>",
+		"Provides [+1] [Uranium] <when below [3] [Uranium]> <when number of [Cities] is more than [3]>",
+		"Provides [+1] [Uranium] <when below [3] [Uranium]> <when number of [Cities] is more than [7]>",
+		
+        "Will not be replaced by automated units",
+        "Unpillagable",
+        ],
+    //"shortcutKey": "N"
+},
+
+{
+	"name": "Nuclear Enrichment Facility",
+    "terrainsCanBeBuiltOn": ["Tunnels"],
+    "turnsToBuild": 6,
+    "techRequired": "Engineering",
+    "uniques": [
+        "Can only be built on [{Friendly} {Mountain} {Tunnel}] tiles",
+        "Costs [2] [Gold] per turn",
+		"Provides [1] [Uranium] <for every [5] [[Uranium] resource of [Open Borders] Civilizations]>",
+		"[+25]% Production when constructing [Nuclear Plant] buildings [in all cities]",
+		"[-33]% maintenance cost for [Nuclear Plant] buildings [in all cities]",
+		"[+2]% Production when constructing [Nuclear Weapon] units [in all cities]",
+		"[+2]% Production when constructing [Nuclear Weapon] units [in all cities] <for every [[Nuclear Plant] Buildings]>",
+        "Will not be replaced by automated units",
+        "Unpillagable",
+        ],
+    //"shortcutKey": "N"
+},
+
+{
 	"name": "Defense Command Center",
     "terrainsCanBeBuiltOn": ["Tunnels"],
     "turnsToBuild": 6,
@@ -55,6 +123,10 @@
     "uniques": [
         "Can only be built on [{Friendly} {Mountain} {Tunnel}] tiles",
         "Costs [2] [Gold] per turn",
+		"[+2 Happiness] <when at war>",
+		"[+2] Air Interception Range",
+		"[+1] Movement <for [Land] units> <in [your] tiles> <when at war>",
+		"[+1] Sight <for [Water] units> <when at war>",
         //"Tile provides yield without assigned population",
         "Will not be replaced by automated units",
         "Unpillagable",
