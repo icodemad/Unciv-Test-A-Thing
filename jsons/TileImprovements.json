@@ -24,10 +24,11 @@
         "Can be built just outside your borders",
         "Gain control over [Mountain] tiles in a [1]-tile radius",
         "Costs [2] [Gold] per turn",
+		"Utility Support Systems <in tiles adjacent to [Utility Support Systems] tiles>",
         //"Nullifies all other stats this tile provides",
-        "Tile provides yield without assigned population",
+        "Tile provides yield without assigned population <in [Utility Support Systems] tiles>",
 		"Comment [No base yield from terrain/resources]",
-		"[-10 Food, -10 Production, -10 Gold, -10 Culture, -10 Faith] <hidden from users>",
+		//"[-10 Food, -10 Production, -10 Gold, -10 Culture, -10 Faith] <hidden from users>",
         "[+3 Production, +1 Science] <when stacked with a [Military] unit>", // <when at war>",
         "[+1 Production] for each adjacent [MountainB]",
         // "Adjacent enemy units ending their turn take [20] damage",
@@ -50,6 +51,23 @@
 	// 
 
 
+{
+	"name": "Facility Support Systems",
+    "terrainsCanBeBuiltOn": ["Tunnels"],
+    "turnsToBuild": 6,
+    "techRequired": "Engineering",
+    "uniques": [
+        "Can only be built on [{Friendly} {Mountain} {Tunnel}] tiles",
+        "Costs [2] [Gold] per turn",
+
+		"Utility Support Systems",
+		
+		
+        "Will not be replaced by automated units",
+        "Unpillagable",
+        ],
+    //"shortcutKey": "N"
+},
 
 	  										
 {
@@ -60,6 +78,7 @@
     "uniques": [
         "Can only be built on [{Friendly} {Mountain} {Tunnel}] tiles",
         "Costs [2] [Gold] per turn",
+		"Costs [1] [Gold] per turn",
 
 		//[+]% Damage when intercepting <for ,
 		"Population loss from nuclear attacks [-1]% [in all cities] <for every [[{Open Borders} {Ballistic Missile EWS}] Tiles]>",
