@@ -9,7 +9,7 @@
 	    "uniques": [
 	        //Instantly gain [1] [proxy] <for every [((1+FLOOR([Cities]/4)) + 3 - ABS((1+FLOOR([Cities]/4)) - 3)) / 2]>
 			"Costs [1] [Gold] per turn",
-			"Costs [1] [Gold] per turn",
+			// "Costs [1] [Gold] per turn",
       
 //			"Provides [1] [Horses] <for every [Cities]>"
 			"Provides [1] [Horses] <when below [1] [Horses]>",
